@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cvj2pixj32221"]
+
+[ext_resource type="Script" uid="uid://x1p1cndayi08" path="res://scripts/api_manager.gd" id="1_m11l2"]
+
+[node name="Api" type="Node2D" unique_id=1707232395]
+
+[node name="ApiManager" type="Node2D" parent="." unique_id=110569984]
+script = ExtResource("1_m11l2")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="ApiManager" unique_id=1890373047]

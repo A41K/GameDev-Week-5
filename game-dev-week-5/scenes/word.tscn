@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bykp7k0036qlq"]
+
+[ext_resource type="Script" uid="uid://dd4kggvay0lkr" path="res://scripts/word.gd" id="1_ar2rp"]
+[ext_resource type="LabelSettings" uid="uid://n16qhve4l5lr" path="res://label/new_label_settings.tres" id="2_ve73v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdpmc"]
+size = Vector2(40, 23)
+
+[node name="Word" type="Node2D" unique_id=1922664965]
+script = ExtResource("1_ar2rp")
+
+[node name="Word" type="Area2D" parent="." unique_id=508501822]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Word" unique_id=436935938]
+position = Vector2(20, 11.5)
+shape = SubResource("RectangleShape2D_sdpmc")
+
+[node name="Label" type="Label" parent="Word" unique_id=1736697235]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+label_settings = ExtResource("2_ve73v")
+horizontal_alignment = 1
+vertical_alignment = 1
