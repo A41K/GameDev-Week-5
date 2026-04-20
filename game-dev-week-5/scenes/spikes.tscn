@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cdooy61uy176o"]
+
+[ext_resource type="Script" uid="uid://cp15l3h14frd2" path="res://scripts/fall_area.gd" id="1_xbcdo"]
+[ext_resource type="Texture2D" uid="uid://qrdybvugycsg" path="res://images/spikes.png" id="2_bflj7"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_kd5gq"]
+a = Vector2(5, -9)
+b = Vector2(-11, 22)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_0vi4p"]
+a = Vector2(-20, -6)
+b = Vector2(-5, 23)
+
+[node name="Spikes" type="Node2D" unique_id=744106047]
+
+[node name="Spike" type="Area2D" parent="." unique_id=727573339]
+position = Vector2(7, -26)
+script = ExtResource("1_xbcdo")
+
+[node name="Sprite2D" type="Sprite2D" parent="Spike" unique_id=1690840164]
+position = Vector2(8.499992, 10.968735)
+scale = Vector2(0.13777763, 0.1330556)
+texture = ExtResource("2_bflj7")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Spike" unique_id=1431044235]
+position = Vector2(4, 5)
+shape = SubResource("SegmentShape2D_kd5gq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spike" unique_id=133115971]
+position = Vector2(28, 2)
+shape = SubResource("SegmentShape2D_0vi4p")

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GameDev Week5"
-run/main_scene="uid://dbad58i371p71"
+run/main_scene="uid://bjfs665sv031i"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -23,6 +23,7 @@ EventController="*uid://ku0bikwo035d"
 [display]
 
 window/size/viewport_width=1250
+window/size/viewport_height=720
 
 [editor_plugins]
 

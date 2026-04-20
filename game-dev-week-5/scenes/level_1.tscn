@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://on1kjt1kkyjb" path="res://images/636856974223728165.png" id="12_d5akn"]
 [ext_resource type="Script" uid="uid://2omdl2qpkaii" path="res://scripts/next_scene.gd" id="14_6dial"]
 [ext_resource type="Texture2D" uid="uid://cb0jl6k8js3uu" path="res://images/Flag.png" id="15_7nomh"]
+[ext_resource type="Texture2D" uid="uid://cpi8fuum5rfcp" path="res://images/level1.png" id="16_7nomh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4c2fu"]
 size = Vector2(38, 37.99997)
@@ -488,3 +489,7 @@ shape = SubResource("RectangleShape2D_1s4pk")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Next Level/Area2D" unique_id=289069849]
 position = Vector2(-14.25, 40)
 shape = SubResource("RectangleShape2D_x2xxo")
+
+[node name="Level1" type="Sprite2D" parent="." unique_id=1877500934]
+position = Vector2(-866, 790)
+texture = ExtResource("16_7nomh")
